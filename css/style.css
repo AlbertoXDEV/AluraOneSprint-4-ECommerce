@@ -1,0 +1,33 @@
+.temp-border{
+  border: 1px solid blue;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  min-height: 10vh;
+  align-items: center;
+}
+
+.header__item{
+  height: calc( (80px/100) * 42);
+}
+
+.logo{
+  position: relative;
+  bottom: 1ex;
+}
+
+.search{
+  border-radius: 20px;
+  background-color: #efefef;
+  height:calc((80px/100) * 30);;
+}
+
+.login{
+  border: 1px solid blue;
+  color:lightblue;
+  font-size: 17px;
+  width: 20vw;
+}
