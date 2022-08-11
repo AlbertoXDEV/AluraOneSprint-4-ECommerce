@@ -29,10 +29,13 @@
 .logo{
   min-width: calc((1440px/100)*12);
   height: calc((80px/100) *60);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .logo__img{
-  width: 100%;
+  width: 99%;
   height: 100%;
 }
 
@@ -54,19 +57,55 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 420px) {
+.banner{
 
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 600px) {
+  .search{
+    display: none;
+  }
+
+  .logo__img{
+    width: 75%;
+    height: 80%;
+  }
+
+  .login{
+    width: 33vw;
+  }
+}
+
+@media screen and (min-width:601px) and (max-width: 920px) {
+  .header{
+    display: block;
+    padding: 0 25px;
+  }
+
   .header-container{
-    width: 90vw;
+    width: 100%;
     justify-content: space-between;
   }
 
   .header-search{
     width: 65%;
+    justify-content: flex-start;
+  }
+
+  .logo__img{
+    width: 75%;
+    height: 80%;
+  }
+
+  .search{
+    height: 40px;
+  }
+
+  .login{
+    width: 20%;
+    height: 50%;
   }
 }
