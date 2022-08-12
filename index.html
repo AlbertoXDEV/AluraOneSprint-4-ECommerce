@@ -13,17 +13,18 @@
 </head>
 
 <body>
-  <header class="header temp-border">
+  <header class="header">
     <div class="header-container">
       <div class="header-search">
-        <a href="" class="header__item logo">
+        <a href="" class="logo">
           <img src="Resources/Logo.png" alt="AluraGeek" class="logo__img">
         </a>
         <input type="search" placeholder="O que você quer encontrar" class="search">
       </div>
-      <a href="" class="header__item login">Login</a>
+      <a href="" class="login">Login</a>
     </div>
   </header>
+
   <main>
     <section class="banner">
       <div class="banner__content">
@@ -32,5 +33,55 @@
         <a href="" class="consoles-btn">Ver consoles</a>
       </div>
     </section>
+
+    <section class="products-container">
+      <div class="products-div" id="Star-Wars">
+        <div class="products-top">Star-Wars <a href="" class="products-top__link"><span>Ver mais</span><img src="Resources/Vector.svg" alt="&#10132;"></a> </div>
+        <div class="products-bottom"></div>
+      </div>
+      <div class="products-div" id="Consoles">
+        <div class="products-top">Consoles <a href="" class="products-top__link"><span>Ver mais</span><img src="Resources/Vector.svg" alt="&#10132;"></a> </div>
+        <div class="products-bottom"></div>
+      </div>
+      <div class="products-div" id="Diversos">
+        <div class="products-top">Diversos <a href="" class="products-top__link"><span>Ver mais</span><img src="Resources/Vector.svg" alt="&#10132;"></a> </div>
+        <div class="products-bottom"></div>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="footer">
+      <a href="" class="logo">
+        <img src="Resources/Logo.png" alt="AluraGeek" class="logo__img">
+      </a>
+
+      <div class="footer__links">
+        <a href="">Quem somos nós</a>
+        <a href="">Política de privacidade</a>
+        <a href="">Programa fidelidade</a>
+        <a href="">Nossas lojas</a>
+        <a href="">Quero ser franqueado</a>
+        <a href="">Anuncie aqui</a>
+      </div>
+
+      <form class="contact-form" action="index.html" method="post">
+          Fale conosco
+
+          <!--FIX THE LABEL POS -->
+
+          <label for="name" class="contact-form__label">Nome</label>
+          <input type="text" name="name" class="contact-form__name">
+
+          <label for="msg" class="contact-form__label">Escreva sua mensagem</label>
+          <input type="text" name="msg" class="contact-form__msg">
+
+          <button type="submit" name="button" class="contact-form__btn">Enviar mensagem</button>
+      </form>
+    </div>
+
+    <div class="copyright">
+      <span>Desenvolvido por <a href="https://github.com/AlbertoXDEV">Alberto Silvestre de Sousa Theodoro</a> 2022</span>
+    </div>
+  </footer>
 </body>
