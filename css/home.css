@@ -63,14 +63,13 @@
 .products-top__link{
   font-size: 13px;
   color: var(--button-color);
-}
-
-.products-top__link img {
-  width:15%;
+  background-image: url(../Resources/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .products-top__link span{
-  margin-right: 6px;
+  margin-right: 20px;
 }
 
 .products-bottom{
@@ -80,7 +79,7 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1024px) {
   .banner__content{
     width: 95vw;
   }
